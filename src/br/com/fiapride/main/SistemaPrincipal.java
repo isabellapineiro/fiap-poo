@@ -5,12 +5,10 @@ import br.com.fiapride.model.Humano;
 public class SistemaPrincipal {
 
 	public static void main(String[] args) {
-		Humano Isabella = new Humano();
-		Isabella.faculdade = "FIAP";
-		Isabella.idade = 20;
-		Isabella.sexo = "Feminino";
+		Humano Isabella = new Humano("FIAP", 20, "Feminino");
+		Isabella.catracaFiap();
 		
-		Humano Matheus = new Humano();
+		Humano Matheus = new Humano(null, 0, null);
 		Matheus.faculdade = "UniNassau";
 		Matheus.idade = 26;
 		
