@@ -18,7 +18,7 @@ public class SistemaPrincipal {
 		System.out.println("Eu nasci em: " + (2025 - Isabella.getIdade()) +
 		" Ele nasceu em: " + (2025 - Matheus.getIdade()));
 
-		Isabella.fezAniversario(Isabella.getIdade());
-		Matheus.fezAniversario(Matheus.getIdade());
+        Isabella.fezAniversario();
+        Matheus.fezAniversario();
 	}
 }

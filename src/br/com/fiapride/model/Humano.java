@@ -7,9 +7,9 @@ public class Humano {
     private String sexo;
 
     public Humano(String faculdade, int idade, String sexo) {
-        this.faculdade = faculdade;
-        this.idade = idade;
-        this.sexo = sexo;
+        this.setFaculdade(faculdade);
+        this.setIdade(idade);
+        this.setSexo(sexo);
     }
 
     // Getters
