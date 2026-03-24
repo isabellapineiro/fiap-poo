@@ -2,17 +2,23 @@ package br.com.fiapride.model;
 
 public class Humano {
 
+    private Smartphone smartphone;
     private String faculdade;
     private int idade;
     private String sexo;
 
-    public Humano(String faculdade, int idade, String sexo) {
+    public Humano(String faculdade, int idade, String sexo, Smartphone smartphone) {
         this.setFaculdade(faculdade);
         this.setIdade(idade);
         this.setSexo(sexo);
+        this.setSmartphone(smartphone);
     }
 
     // Getters
+    public Smartphone getSmartphone() {
+        return smartphone;
+    }
+
     public String getFaculdade() {
         return faculdade;
     }
@@ -28,6 +34,10 @@ public class Humano {
     // Setters
     public void setFaculdade(String faculdade) {
         this.faculdade = faculdade;
+    }
+
+    public void setSmartphone(Smartphone smartphone) {
+        this.smartphone = smartphone;
     }
 
     // regra: idade não pode ser negativa
