@@ -16,4 +16,9 @@ public class Android extends Smartphone {
     public void instalarAPK() {
         System.out.println("Instalando APK...");
     }
+    @Override
+    public double calcularSeguro() {
+        // Android mais barato
+        return 100.0 * 0.15;
+    }
 }

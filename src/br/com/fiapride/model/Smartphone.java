@@ -38,4 +38,9 @@ public class Smartphone {
             System.out.println("Carga inválida ou bateria já cheia.");
         }
     }
+
+    public double calcularSeguro() {
+        // valor genérico
+        return 100.0;
+    }
 }

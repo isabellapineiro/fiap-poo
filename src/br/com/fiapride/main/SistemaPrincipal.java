@@ -3,6 +3,9 @@ package br.com.fiapride.main;
 import br.com.fiapride.model.Humano;
 import br.com.fiapride.model.Android;
 import br.com.fiapride.model.Iphone;
+import br.com.fiapride.model.Smartphone;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SistemaPrincipal {
 
@@ -34,5 +37,17 @@ public class SistemaPrincipal {
 
 		System.out.println("Tem FaceID? " + celularIsabella.isTemFaceID());
 		celularIsabella.usarAirDrop();
+
+		List<Smartphone> celulares = new ArrayList<>();
+
+		celulares.add(celularIsabella);
+		celulares.add(celularMatheus);
+
+		System.out.println("\n--- TESTE DE POLIMORFISMO ---");
+
+		for (Smartphone celular : celulares) {
+			System.out.println("Marca: " + celular.getMarca());
+			System.out.println("Seguro: R$ " + celular.calcularSeguro());
+		}
 	}
 }

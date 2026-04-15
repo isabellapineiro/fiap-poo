@@ -21,4 +21,9 @@ public class Iphone extends Smartphone {
         System.out.println("Carregamento otimizado Apple...");
         super.carregar(carga);
     }
+    @Override
+    public double calcularSeguro() {
+        // iPhone mais caro
+        return 100.0 * 0.25;
+    }
 }
