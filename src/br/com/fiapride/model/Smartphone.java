@@ -1,6 +1,7 @@
 package br.com.fiapride.model;
 
-public class Smartphone {
+// Aula 8: classe mãe transformada em abstract class
+public abstract class Smartphone implements Carregavel {
 
     private String marca;
     private int bateria; // %
@@ -31,16 +32,16 @@ public class Smartphone {
         }
     }
 
+    // Aula 9: implementação padrão do método da interface Carregavel
+    @Override
     public void carregar(int carga) {
-        if (carga > 0 && bateria + carga <= 100) {
+        if (carga > 0 && bateria + carga <= CARGA_MAXIMA) {
             this.bateria += carga;
         } else {
             System.out.println("Carga inválida ou bateria já cheia.");
         }
     }
 
-    public double calcularSeguro() {
-        // valor genérico
-        return 100.0;
-    }
+    // Aula 8: método abstrato — implementação obrigatória nas classes filhas
+    public abstract double calcularSeguro();
 }

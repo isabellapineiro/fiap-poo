@@ -1,5 +1,6 @@
 package br.com.fiapride.model;
 
+// Aula 9: Android herda Smartphone que implementa Carregavel
 public class Android extends Smartphone {
 
     private String versaoAndroid;
@@ -16,6 +17,8 @@ public class Android extends Smartphone {
     public void instalarAPK() {
         System.out.println("Instalando APK...");
     }
+
+    // Aula 8: implementação obrigatória do método abstrato da classe mãe
     @Override
     public double calcularSeguro() {
         // Android mais barato
